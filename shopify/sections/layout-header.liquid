@@ -5,8 +5,7 @@
         href="{{ routes.root_url }}"
         class="inline-block text-2xl lg:text-3xl font-bold"
       >
-        {{ shop.name }}
-      </a>
+      <img src=" {{ shop.brand.logo | image_url: width:150  }}">      </a>
 
       <div class="hidden md:block">
         {% render 'layout-menu', class: 'space-x-4' %}
